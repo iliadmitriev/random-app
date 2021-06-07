@@ -1,6 +1,7 @@
 # random-app
 
-> A Vue.js project
+Application generates a random number between -5 and 5 and sums up it to your account.
+Created using vue.js with animation
 
 ## Build Setup
 
