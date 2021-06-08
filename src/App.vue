@@ -44,10 +44,11 @@
     <button class="btn btn-success"
             v-on:click="addLine"
             v-bind:disabled="done"
+            id="btnRandom"
     >
       Добавить рандом
     </button>
-    <ul class="list-group">
+    <ul id="listRandom" class="list-group">
       <li class="list-group-item"
           v-for="log in logs"
       >
