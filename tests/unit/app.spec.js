@@ -19,6 +19,10 @@ describe('App', ()=>{
    })
  })
 
+  wrapper.setData({
+    numCaption: 'caption 1'
+  })
+
   it('should be 100% progress bar', done => {
     const button = wrapper.find('#btnRandom')
     for (let i = 0; i < 10; i++) {
@@ -28,6 +32,15 @@ describe('App', ()=>{
         }
       })
     }
+  })
+
+  it('hide caption', done => {
+    const button = wrapper.find('#btnShowHide')
+    const h2 = wrapper.find('h2')
+    button.trigger('click').then(() => {
+      expect(h2.element.style.display).toBe('none')
+      done()
+    })
   })
 
 })
