@@ -19,6 +19,7 @@
             v-on:click="showHeader = !showHeader"
             v-bind:class="btnClass"
             ref="btnShowHide"
+            id="btnShowHide"
     >
       {{ btnText }}
     </button>
